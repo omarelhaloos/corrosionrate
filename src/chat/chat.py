@@ -14,7 +14,8 @@ from langchain_openai import ChatOpenAI
 from config.config import GROQ_MODELS, OPENROUTER_MODELS, DEFAULT_LLM_PROVIDER
 
 logger = logging.getLogger(__name__)
-
+GROQ_API_KEY_1="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"
+OPENROUTER_API_KEY="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"
 # ---- Load Environment Variables ----
 load_dotenv()
 
@@ -55,7 +56,7 @@ _OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 def _get_openrouter_api_key() -> str | None:
     """Get the OpenRouter API key from environment."""
-    return os.getenv("OPENROUTER_API_KEY")
+    return os.getenv(OPENROUTER_API_KEY)
 
 
 _openrouter_model_cycle = cycle(OPENROUTER_MODELS)
