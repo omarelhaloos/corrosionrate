@@ -1,0 +1,9 @@
+joblib==1.4.2
+scikit-learn==1.6.1
+pandas==2.2.3
+streamlit==1.44.1
+transformers==4.51.3
+torch==2.6.0
+python-dotenv==1.1.0
+langchain_groq==0.3.2
+langchain-openai>=0.3.0
